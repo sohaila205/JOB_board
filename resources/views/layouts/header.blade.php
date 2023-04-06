@@ -63,7 +63,7 @@
 					<ul class="list-unstyled">
 						<li class="divider"></li>
 						<li>
-							<a role="menuitem" tabindex="-1" href="{{route('admin.logout')}}"><i class="fa fa-power-off"></i> تسجيل خروج</a>
+							<a role="menuitem" tabindex="-1" href="{{route('logout')}}"><i class="fa fa-power-off"></i> تسجيل خروج</a>
 						</li>
 					</ul>
 				</div>
