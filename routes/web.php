@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,5 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('logoutt', [LoginController::class, 'logout'])->name('logoutt');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('index', [JobController::class, 'index'])->name('index');
+Route::get('approve/{id}', [JobController::class, 'approvePost']);
