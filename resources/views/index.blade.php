@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 <header class="page-header">
@@ -11,16 +11,16 @@
         <div class="panel-body" style="text-align: center;">
             @include('layouts.success')
 
-            <div class="table-responsive"style="text-align: center;" >
+            <div class="table-responsive">
                 <table class="table table-striped mb-none">
                     <thead >
                         <tr>
-                            <th class="text-left"  style="text-align: center;">job</th>
-                            <th class="text-left"style="text-align: center;" >descripton</th>
-                            <th class="text-right" style="text-align: center;">address</th>
-                            <th class="text-right" style="text-align: center;">approved</th>
-                            <th class="text-right" style="text-align: center;">salary</th>
-                            <th class="text-right" style="text-align: center;">company</th>
+                            <th  style="text-align: center;">job</th>
+                            <th style="text-align: center;" >descripton</th>
+                            <th  style="text-align: center;">address</th>
+                            <th  style="text-align: center;">approved</th>
+                            <th  style="text-align: center;">salary</th>
+                            <th  style="text-align: center;">company</th>
 
                         </tr>
                     </thead>

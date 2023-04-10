@@ -1,24 +1,7 @@
-</section>
-<!-- Vendor -->
-<script src="{{asset('assets/vendor/jquery/jquery.js')}}"></script>
-<script src="{{asset('assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js')}}"></script>
-<script src="{{asset('assets/vendor/bootstrap/js/bootstrap.js')}}"></script>
-<script src="{{asset('assets/vendor/nanoscroller/nanoscroller.js')}}"></script>
-<script src="{{asset('assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js')}}"></script>
-<script src="{{asset('assets/vendor/magnific-popup/magnific-popup.js')}}"></script>
-<script src="{{asset('assets/vendor/jquery-placeholder/jquery.placeholder.js')}}"></script>
-
-<!-- Custom Files -->
-@yield('scripts')
-
-<!-- Theme Base, Components and Settings -->
-<script src="{{asset('assets/javascripts/theme.js')}}"></script>
-
-<!-- Theme Custom -->
-<script src="{{asset('assets/javascripts/theme.custom.js')}}"></script>
-
-<!-- Theme Initialization Files -->
-<script src="{{asset('assets/javascripts/theme.init.js')}}"></script>
-
-</body>
-</html>
+<!-- Footer opened -->
+	<div class="main-footer ht-40">
+		<div class="container-fluid pd-t-0-f ht-100p">
+			<span>Copyright © 2020 <a href="#">Valex</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
+		</div>
+	</div>
+<!-- Footer closed -->
