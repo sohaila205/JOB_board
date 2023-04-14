@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Spatie\Permission\Models\Role;
-use DB;
-use Hash;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Arr;
 
 class UserController extends Controller
@@ -47,7 +47,9 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|same:confirm-password',
-            'roles' => 'required'
+            'type_id' =>'required',
+            'roles_name' => 'required',
+            'status' => 'required'
         ]);
 
         $input = $request->all();
@@ -100,7 +102,9 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email,'.$id,
             'password' => 'same:confirm-password',
-            'roles' => 'required'
+            'type_id' =>'required',
+            'roles_name' => 'required',
+            'status' => 'required'
         ]);
 
         $input = $request->all();
@@ -128,6 +132,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
+        dd('iii');
         User::find($id)->delete();
         return redirect()->route('users.index')
                         ->with('success','User deleted successfully');
