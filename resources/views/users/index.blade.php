@@ -21,7 +21,8 @@
 <div class="breadcrumb-header justify-content-between">
     <div class="my-auto">
         <div class="d-flex">
-            <h4 class="content-title mb-0 my-auto">المستخدمين</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ قائمة
+            <h4 class="content-title mb-0 my-auto">{{ __('messages.users') }}</h4>
+            <span class="text-muted mt-1 tx-13 mr-2 mb-0">/ قائمة
                 المستخدمين</span>
         </div>
     </div>
@@ -54,7 +55,7 @@
                         <thead>
                             <tr>
                                 <th class="wd-10p border-bottom-0">#</th>
-                                <th class="wd-15p border-bottom-0">اسم المستخدم</th>
+                                <th class="wd-15p border-bottom-0">{{ __('messages.user') }}</th>
                                 <th class="wd-20p border-bottom-0">البريد الالكتروني</th>
                                 <th class="wd-15p border-bottom-0">حالة المستخدم</th>
                                 <th class="wd-15p border-bottom-0">نوع المستخدم</th>
