@@ -21,3 +21,4 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('logoutt', [LoginController::class, 'logout'])->name('logoutt');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('deleteUsers', [App\Http\Controllers\HomeController::class, 'softDeleteUsers'])->name('softDeleteUsers');
