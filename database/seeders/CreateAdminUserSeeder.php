@@ -17,7 +17,7 @@ class CreateAdminUserSeeder extends Seeder
      */
     public function run()
     {
-        /* DB::table('user_types')->insert([
+         DB::table('user_types')->insert([
              'type' => 'Admin',
          ]);
           DB::table('user_types')->insert([
@@ -26,10 +26,10 @@ class CreateAdminUserSeeder extends Seeder
          DB::table('user_types')->insert([
              'type' => 'Candidate',
          ]);
-*/
+
         $user = User::create([
             'name' => 'sohaila',
-            'email' => 'sohaila55@yahoo.com',
+            'email' => 'sohaila5@yahoo.com',
             'password' => bcrypt('123456'),
             'roles_name' => ["Admin"],
             'status' => 'مفعل',
