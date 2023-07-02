@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\job;
+use App\Services\JobService;
 use Illuminate\Http\Request;
 
 class JobController extends Controller
 {
 
+    protected $JobService;
+
+    public function __construct(JobService $JobService)
+    {
+        $this->JobService = $JobService;
+    }
     public function index()
     {
-        $jobs = job::all();
+        $jobs = $this->JobService->index();
         return view('index', compact('jobs'));
     }
 
